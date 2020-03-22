@@ -2,6 +2,7 @@
 Advance Method To Hack Mobile Or Pc Front (Selfie) Camera With A Link.
 <br>
 See This Image :-https://ibb.co/RbYvWG8
+
 # How it works?
 <p>The tool generates a malicious HTTPS page using Serveo or Ngrok Port Forwarding methods, and a javascript code to cam requests using MediaDevices.getUserMedia. </p>
 
@@ -35,7 +36,7 @@ See This Image :-https://ibb.co/RbYvWG8
 <p>21. Currency</p>
 <p> And More...</p>
           
-## Installing (Kali Linux/Termux):
+# Installing (Kali Linux/Termux):
 
 ```
 git clone https://github.com/Hack-The-World-With-Tech/Cam-Hack.git
@@ -48,3 +49,9 @@ bash camhack.sh
 # Important
 <p> Before use Serveo You must check that Is Serveo enable. Check it in this site http://serveo.net/ </p>
 <p> If you use Ngrok in termux, You must enable Hotspot. Otherwise Ngrok doesn't generate a link. </p>
+<p> If you use any part from this code, giving me the credits. Read the Lincense!</p>
+
+# Contact
+<p> Any Problem Or Issues Email for this Email Address </p>
+<p> Email Address :- techwithsasi@gmail.com </p>
+<p> This tool created By |SASI| </p>
