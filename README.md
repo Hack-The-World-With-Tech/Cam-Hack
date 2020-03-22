@@ -15,7 +15,7 @@ See This Image :-https://ibb.co/RbYvWG8
 <p>01. Work in Termux and Kali Linux</p>
 <p>02. Distract Victim To your favovrite website</p>
 <p>03. Hide your link with 4th url shortener</p>
-<p>+*+ You will get victim</p>
+<p>+-+ You will get victim .../p>
 <p>04. Ip</p>
 <p>05. User-Agent</p>
 <p>06. Hostname</p>
