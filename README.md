@@ -52,6 +52,7 @@ bash camhack.sh
 <p> If you use any part from this code, giving me the credits. Read the Lincense!</p>
 
 # Contact
-<p> Any Problem Or Issues Email for this Email Address </p>
+<p> Any Problem Or Issues Email for this Email Address Or My Telegram Bot</p>
 <p> Email Address :- techwithsasi@gmail.com </p>
+<p> Telegram Bot  :- http://t.me/HackTheWorldWithTech_bot
 <p> This tool created By |SASI| </p>
