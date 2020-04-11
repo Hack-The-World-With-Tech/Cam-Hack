@@ -1,0 +1,192 @@
+* {margin:0}
+html, body {
+	font-size: 11px;
+	font-family: "Arial","Verdana","sans-serif";
+	color: #333;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #031321;
+}
+a {text-decoration: none}
+p, .breadcrumbs {margin:15px 0}
+h1, h2, p {
+    font-weight: normal;
+    line-height: 1.6
+}
+pre, #ht {overflow: auto; padding: 8px 0}
+pre.ht {font-size:1.4em}
+:focus {outline:none}
+input[type="text"], .err, .button, #ln {border:1px solid rgba(0,0,0,0.1)}
+input[type="text"] {
+	padding: 2.5%;
+	width: 95%;
+	margin: 0 0 3% 0;
+	font-size: 1.4em
+}
+input[type="text"]:focus {border: 1px solid rgba(0,0,0,0.3)}
+input[type="submit"] {margin-left:1px}
+.wrap {
+	max-width: 1000px;
+	margin: 0 auto;
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+.cont {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 4%;
+	height: auto
+}
+.footer {display: table-row; height: 1px}
+.err, #ln, .button:hover {background: #2196f3}
+input[type="text"], #logo, .button, #ads {text-align: center}
+#lt, .button {letter-spacing: 0.05em}
+#lt, .footer {color: #707e8c}
+.err {
+    color: #fff;
+    padding: 4px 9px;
+	font-size: 11px
+}
+#logo {
+	margin: 4% auto;
+	display: block;
+	font-size: 60px
+}
+#logo a {display: inline-block}
+#ln {
+	color: #fff;
+	padding: 8px;
+	margin: 0 10px 0 0;
+	border-radius: 50%;
+	font-style: italic
+}
+#lt {font-size: 30%; vertical-align: middle}
+.button {
+	background: #3d6b99;
+	color: #fff;	
+	font-size: 1.6em;
+	padding: 2% 0;
+	cursor: pointer;
+	display: block;
+	width: 100%;
+	margin: 0 0 3%;
+	white-space: nowrap
+}
+.button.wb {background: none; color: #333}
+.button.wb:hover {background:#f5f5f5}
+#ads {margin: 0 0 3%; min-height: 60px}
+.footer, .fpa, .flc {overflow:hidden}
+.fpa, .des {padding: 10px 20px}
+.fic, .flc {float:left}
+.flc, .des {clear: both}
+.fic a {
+    font-weight: bold;
+    padding: 3px 0;
+	margin: 0 4px 4px 0;
+	width: 60px;
+	display: inline-block;
+	font-size: 11px;	
+	letter-spacing: 0;	
+	line-height: 1
+}
+.flc {margin: 10px 0 0}
+.flc a, .des a {color:#333}
+.flc a {margin-right:8px}
+.flc a:hover, .des a:hover {color:#2196f3}
+.des {border-top: 1px solid #eee; line-height: 1.6}
+@media screen and (min-width: 500px){	
+	.flc {
+		float: right;
+		clear: none;
+		margin: 0
+	}
+}
+a.ex1
+{
+	background-color: #031321;
+	border: #031321;
+	position: relative;
+	display: inline-block;
+	padding: 15px 30px;
+	color: #2196f3;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	text-decoration: none;
+	font-size: 50px;
+	overflow: hidden;
+	transition: 0.2s;
+	border-radius: 12px;
+}
+a.ex1:hover
+{
+	color: #fff;
+	background: #2196f3;
+	box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+	transition-delay: 1s;
+}
+a.ex1 span
+{
+	position: absolute;
+	display: block;
+}
+a.ex1 span:nth-child(1)
+{
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg,transparent,#2196f3);
+}
+a.ex1:hover span:nth-child(1)
+{
+	left: 100%;
+	transition: 1s;
+}
+a.ex1 span:nth-child(3)
+{
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(270deg,transparent,#2196f3);
+}
+a.ex1:hover span:nth-child(3)
+{
+	right: 100%;
+	transition: 1s;
+	transition-delay: 0.5s;
+}
+a.ex1 span:nth-child(2)
+{
+	top: -100%;
+	right: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(180deg,transparent,#2196f3);
+}
+a.ex1:hover span:nth-child(2)
+{
+	top: 100%;
+	transition: 1s;
+	transition-delay: 0.25s;
+}
+a.ex1 span:nth-child(4)
+{
+	bottom: -100%;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(360deg,transparent,#2196f3);
+}
+a.ex1:hover span:nth-child(4)
+{
+	bottom: 100%;
+	transition: 1s;
+	transition-delay: 0.75s;
+}
