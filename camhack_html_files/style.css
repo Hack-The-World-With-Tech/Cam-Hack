@@ -3,7 +3,14 @@ html, body {
 	font-size: 11px;
 	font-family: "Arial","Verdana","sans-serif";
 	color: #333;
-	height: 100%
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #031321;
 }
 a {text-decoration: none}
 p, .breadcrumbs {margin:15px 0}
@@ -37,7 +44,7 @@ input[type="submit"] {margin-left:1px}
 	height: auto
 }
 .footer {display: table-row; height: 1px}
-.err, #ln, .button:hover {background: #335980}
+.err, #ln, .button:hover {background: #2196f3}
 input[type="text"], #logo, .button, #ads {text-align: center}
 #lt, .button {letter-spacing: 0.05em}
 #lt, .footer {color: #707e8c}
@@ -91,7 +98,7 @@ input[type="text"], #logo, .button, #ads {text-align: center}
 .flc {margin: 10px 0 0}
 .flc a, .des a {color:#333}
 .flc a {margin-right:8px}
-.flc a:hover, .des a:hover {color:#335980}
+.flc a:hover, .des a:hover {color:#2196f3}
 .des {border-top: 1px solid #eee; line-height: 1.6}
 @media screen and (min-width: 500px){	
 	.flc {
@@ -99,4 +106,87 @@ input[type="text"], #logo, .button, #ads {text-align: center}
 		clear: none;
 		margin: 0
 	}
+}
+a.ex1
+{
+	background-color: #031321;
+	border: #031321;
+	position: relative;
+	display: inline-block;
+	padding: 15px 30px;
+	color: #2196f3;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	text-decoration: none;
+	font-size: 50px;
+	overflow: hidden;
+	transition: 0.2s;
+	border-radius: 12px;
+}
+a.ex1:hover
+{
+	color: #fff;
+	background: #2196f3;
+	box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+	transition-delay: 1s;
+}
+a.ex1 span
+{
+	position: absolute;
+	display: block;
+}
+a.ex1 span:nth-child(1)
+{
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg,transparent,#2196f3);
+}
+a.ex1:hover span:nth-child(1)
+{
+	left: 100%;
+	transition: 1s;
+}
+a.ex1 span:nth-child(3)
+{
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(270deg,transparent,#2196f3);
+}
+a.ex1:hover span:nth-child(3)
+{
+	right: 100%;
+	transition: 1s;
+	transition-delay: 0.5s;
+}
+a.ex1 span:nth-child(2)
+{
+	top: -100%;
+	right: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(180deg,transparent,#2196f3);
+}
+a.ex1:hover span:nth-child(2)
+{
+	top: 100%;
+	transition: 1s;
+	transition-delay: 0.25s;
+}
+a.ex1 span:nth-child(4)
+{
+	bottom: -100%;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(360deg,transparent,#2196f3);
+}
+a.ex1:hover span:nth-child(4)
+{
+	bottom: 100%;
+	transition: 1s;
+	transition-delay: 0.75s;
 }
